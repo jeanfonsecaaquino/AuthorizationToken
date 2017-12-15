@@ -1,0 +1,30 @@
+{
+  "name": "authorizationtoken",
+  "version": "0.0.1",
+  "description": "Projeto para prover tokens de aplicações autorizadas",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start-development": "nodemon app ENV=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanfonsecaaquino/AuthorizationToken.git"
+  },
+  "author": "Jean Aquino",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.11.0",
+    "ioredis": "^3.2.1",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "restify": "^6.3.4",
+    "yargs": "^10.0.3"
+  },
+  "bugs": {
+    "url": "https://github.com/jeanfonsecaaquino/AuthorizationToken/issues"
+  },
+  "homepage": "https://github.com/jeanfonsecaaquino/AuthorizationToken#readme"
+}
