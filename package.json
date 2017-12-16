@@ -3,8 +3,24 @@
   "version": "0.0.1",
   "description": "Projeto para prover tokens de aplicações autorizadas",
   "main": "app.js",
+  "nyc": {
+    "include": [
+      "modules/**/*.js"
+    ],
+    "reporter": [
+      "text-summary",
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "**/node_modules/**",
+      "**/test/**",
+      "**/coverage/**"
+    ],
+    "all": true
+  },
   "scripts": {
-    "test": "test",
+    "test": "nyc mocha test/unit/**",
     "start-development": "nodemon app ENV=development"
   },
   "repository": {
@@ -26,5 +42,9 @@
   "bugs": {
     "url": "https://github.com/jeanfonsecaaquino/AuthorizationToken/issues"
   },
-  "homepage": "https://github.com/jeanfonsecaaquino/AuthorizationToken#readme"
+  "homepage": "https://github.com/jeanfonsecaaquino/AuthorizationToken#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.0",
+    "nyc": "^11.3.0"
+  }
 }
