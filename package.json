@@ -13,14 +13,16 @@
       "html"
     ],
     "exclude": [
+      "modules/dao/redisConnection.js",
       "**/node_modules/**",
       "**/test/**",
-      "**/coverage/**"
+      "**/coverage/**",
+      "modules/config/**"
     ],
     "all": true
   },
   "scripts": {
-    "test": "nyc mocha test/unit/**",
+    "test": "nyc mocha test/unit/** ENV=development",
     "start-development": "nodemon app ENV=development"
   },
   "repository": {

@@ -2,9 +2,9 @@ var expect = require('chai').expect;
 var chai = require('chai');
 const axios = require('axios');
 
-var app = require('../../config')();
+var app = require('../../serverConfig')();
 
-describe('teste inicial chai rodando', () => {
+describe('Deve Iniciar a aplicação e verificar se o rest esta ok', () => {
 
     before(() => {
         app.listen(8080, () => {
