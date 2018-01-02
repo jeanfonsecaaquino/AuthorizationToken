@@ -21,7 +21,7 @@
             "args": [
                 "${workspaceFolder}/test/unit/*.js",
                 "--no-timeouts",
-                "ENV=development"
+                "--exit"
             ]
         },
         {

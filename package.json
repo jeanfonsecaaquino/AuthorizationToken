@@ -22,8 +22,8 @@
     "all": true
   },
   "scripts": {
-    "test": "nyc mocha test/unit/** ENV=development",
-    "start-development": "nodemon app ENV=development"
+    "test": "nyc mocha test/unit/** --exit",
+    "start-development": "nodemon app"
   },
   "repository": {
     "type": "git",
